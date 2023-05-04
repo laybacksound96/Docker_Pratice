@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mongoDB:
+    image: 'mongo'
+    volumes:
+      - data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: max
+      MONGO_INITDB_ROOT_PASSWORD: secret
+    
+  # frontend:
+  # backend:
+volumes:
+  data:
